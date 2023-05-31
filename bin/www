@@ -14,8 +14,13 @@ var http = require('http');
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/Live_mongodb_database')
+// mongoose.connect('mongodb://127.0.0.1:27017/Live_mongodb_database')
+mongoose.connect('mongodb+srv://mayurdodiya1234:mayurdodiyamongodb@cluster0.j9ia46i.mongodb.net/')
   .then(() => console.log('Connected!'));
+
+
+
+  
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
